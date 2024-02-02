@@ -80,5 +80,27 @@ M.copilot = {
     }
   }
 }
+
+M.vimTmuxNavigator = {
+  plugin = true,
+  n = {
+    ["<C-h>"] = {
+      "<cmd>TmuxNavigateLeft<CR>",
+      "Navigate Tmux"
+    },
+    ["<C-j>"] = {
+      "<cmd>TmuxNavigateDown<CR>",
+      "Navigate Tmux"
+    },
+    ["<C-k>"] = {
+      "<cmd>TmuxNavigateUp<CR>",
+      "Navigate Tmux"
+    },
+    ["<C-l>"] = {
+      "<cmd>TmuxNavigateRight<CR>",
+      "Navigate Tmux"
+    },
+  }
+}
 return M
 

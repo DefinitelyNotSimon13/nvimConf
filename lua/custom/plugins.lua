@@ -124,18 +124,18 @@ local plugins = {
     lazy = false
   },
   {
-    "kiyoon/nvim-tree-remote.nvim",
-    lazy = false
-  },
-  {
-    "kiyoon/tmuxsend.vim",
-    keys = {
-      { "-", "<Plug>(tmuxsend-smart)", mode = { "n", "x" } },
-      { "_", "<Plug>(tmuxsend-plain)", mode = { "n", "x" } },
-      { "<space>-", "<Plug>(tmuxsend-uid-smart)", mode = { "n", "x" } },
-      { "<space>_", "<Plug>(tmuxsend-uid-plain)", mode = { "n", "x" } },
-      { "<C-_>", "<Plug>(tmuxsend-tmuxbuffer)", mode = { "n", "x" } },
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+    cmd = {
+      "TmuxNavigateLeft",
+      "TmuxNavigateDown",
+      "TmuxNavigateUp",
+      "TmuxNavigateRight",
+      "TmuxNavigatePrevious",
     },
+    config = function()
+      require("core.utils").load_mappings("vimTmuxNavigator")
+    end,
   },
 }
 return plugins
