@@ -140,5 +140,16 @@ local plugins = {
       require("core.utils").load_mappings("vimTmuxNavigator")
     end,
   },
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    },
+    config = function()
+      require("custom.configs.noice-config")
+    end
+  },
 }
 return plugins
