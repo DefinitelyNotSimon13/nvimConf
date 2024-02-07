@@ -113,10 +113,13 @@ local plugins = {
     event = "VeryLazy"
   },
   {
-    "github/copilot.vim",
-    lazy = false,
+    "zbirenbaum/copilot.lua",
+    cnmd = "Copilot",
+    event = "InsertEnter",
     config = function()
       require("core.utils").load_mappings("copilot")
+      require("copilot").setup({})
+      require("copilot.suggestion").toggle_auto_trigger()
     end,
   },
   {
