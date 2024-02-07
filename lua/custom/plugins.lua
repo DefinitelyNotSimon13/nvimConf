@@ -151,5 +151,38 @@ local plugins = {
       require("custom.configs.noice-config")
     end
   },
+  {
+    "epwalsh/obsidian.nvim",
+    version = "*", -- recommended, use latest release instead of latest commit
+    lazy = true,
+    ft = "markdown",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "hrsh7th/nvim-cmp",
+      "epwalsh/pomo.nvim"
+    },
+    opts = {
+      workspaces = {
+        {
+          name = "uni",
+          path = "~/4_Notes/uni",
+        },
+        {
+          name = "personal",
+          path = "~/4_Notes/personal",
+        },
+        {
+          name = "dailyNotes",
+          path = "~/4_Notes/dailyNotes",
+        },
+        {
+          name = "templates",
+          path = "~/4_Notes/templates",
+        }
+      },
+
+      -- see below for full list of options 👇
+    },
+  }
 }
 return plugins
