@@ -77,7 +77,7 @@ M.copilot = {
     ["<leader>cg"] = {
       "<silent><script><expr>copilot#Accept<CR>",
       "Accept a Copilot expression"
-    }
+    },
   }
 }
 
@@ -100,6 +100,31 @@ M.vimTmuxNavigator = {
       "<cmd>TmuxNavigateRight<CR>",
       "Navigate Tmux"
     },
+  }
+}
+
+M.obsidian = {
+  n = {
+    ["<leader>oo"] = {
+      "<cmd>ObsidianOpen<CR>",
+      "Open the current file in Obsidian"
+    },
+    ["<leader>oc"] = {
+      "<cmd>ObsidianCheck<CR>",
+      "Run Obsidian Check"
+    },
+    ["<leader>of"] = {
+      "<cmd>ObsidianFollowLink<CR>",
+      "Follow the currently selected Link"
+    },
+    ["<leader>on"] = {
+      "<cmd>ObsidianNew<CR>",
+      "Create a new file"
+    },
+    ["<leader>oq"] = {
+      "<cmd>ObsidianQuickSwitch<CR>",
+      "Quickly switch between Obsidian files"
+    }
   }
 }
 return M
