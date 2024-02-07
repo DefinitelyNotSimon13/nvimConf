@@ -127,5 +127,30 @@ M.obsidian = {
     }
   }
 }
+
+M.shfmt = {
+  n = {
+    ["<leader>sf"] = {
+      "<cmd>Shfmt<CR>",
+      "Format sh file"
+    }
+ }
+}
+M.shellcheck = {
+  n = {
+    ["<leader>scr"] = {
+      "<cmd>ShellCheck<CR>",
+      "Run ShellCheck"
+    },
+    ["<leader>scb"] = {
+      "<cmd>ShellCheck!<CR>",
+      "Run ShellCheck with a Bang!"
+    },
+    ["<leader>scl"] = {
+      "<cmd>LShellCheck!<CR>",
+      "Run ShellCheck with a Bang and send errors to a location-list-window"
+    }
+ }
+}
 return M
 

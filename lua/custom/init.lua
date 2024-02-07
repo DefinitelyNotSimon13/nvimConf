@@ -4,3 +4,12 @@ vim.g.copilot_no_tab_map = true
 vim.opt.smartindent = true
 vim.opt.conceallevel = 1
 
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'sh',
+  callback = function()
+    vim.lsp.start({
+      name = 'bash-language-server',
+      cmd = { 'bash-language-server', 'start' },
+    })
+  end,
+})

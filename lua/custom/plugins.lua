@@ -183,6 +183,24 @@ local plugins = {
 
       -- see below for full list of options 👇
     },
+  },
+  {
+    "z0mbix/vim-shfmt",
+    lazy = true,
+    ft = "sh",
+    config = function()
+      require("custom.configs.shfmt-config")
+      require("core.utils").load_mappings("shfmt")
+    end,
+  },
+  {
+    "itspriddle/vim-shellcheck",
+    lazy = true,
+    ft = "sh",
+    config = function ()
+      require("custom.configs.shellcheck-config")
+      require("core.utils").load_mappings("shellcheck")
+    end
   }
 }
 return plugins
