@@ -164,24 +164,10 @@ local plugins = {
     opts = {
       workspaces = {
         {
-          name = "uni",
-          path = "~/4_Notes/uni",
+          name = "Notes",
+          path = "~/4_Notes",
         },
-        {
-          name = "personal",
-          path = "~/4_Notes/personal",
-        },
-        {
-          name = "dailyNotes",
-          path = "~/4_Notes/dailyNotes",
-        },
-        {
-          name = "templates",
-          path = "~/4_Notes/templates",
-        }
       },
-
-      -- see below for full list of options 👇
     },
   },
   {
