@@ -1,4 +1,12 @@
 local M = {}
+M.insert = {
+  i = {
+    ["jj"] = {
+      "<esc>",
+      "Escape"
+    }
+  }
+}
 M.dap = {
   plugin = true,
   n = {
