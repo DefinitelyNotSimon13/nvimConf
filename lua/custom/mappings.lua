@@ -62,7 +62,7 @@ M.lazygit = {
 M.copilot = {
   plugin = true,
   n = {
-    ["<leader>ce"]= {
+    ["<leader>ce"] = {
       "<cmd> Copilot enable <CR>",
       "Enable Copilot inline suggestions"
     },
@@ -78,7 +78,7 @@ M.copilot = {
       "<silent><script><expr>copilot#Accept<CR>",
       "Accept a Copilot expression"
     },
-  }
+  },
 }
 
 M.vimTmuxNavigator = {
@@ -124,6 +124,10 @@ M.obsidian = {
     ["<leader>oq"] = {
       "<cmd>ObsidianQuickSwitch<CR>",
       "Quickly switch between Obsidian files"
+    },
+    ["<leader>od"] = {
+      "<cmd>ObsidianToday<CR>",
+      "Open today's note"
     }
   }
 }
@@ -134,7 +138,7 @@ M.shfmt = {
       "<cmd>Shfmt<CR>",
       "Format sh file"
     }
- }
+  }
 }
 M.shellcheck = {
   n = {
@@ -149,8 +153,7 @@ M.shellcheck = {
     ["<leader>scl"] = {
       "<cmd>LShellCheck!<CR>",
       "Run ShellCheck with a Bang and send errors to a location-list-window"
-    }
- }
+    },
+  }
 }
 return M
-

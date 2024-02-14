@@ -118,8 +118,8 @@ local plugins = {
     event = "InsertEnter",
     config = function()
       require("core.utils").load_mappings("copilot")
-      require("copilot").setup({})
       require("copilot.suggestion").toggle_auto_trigger()
+      require("custom.configs.copilot-config")
     end,
   },
   {
