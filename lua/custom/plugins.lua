@@ -187,6 +187,14 @@ local plugins = {
       require("custom.configs.shellcheck-config")
       require("core.utils").load_mappings("shellcheck")
     end
+  },
+  {
+    "Fymyte/rasi.vim",
+    ft = "rasi",
+    run = "TSInstall rasi",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
   }
 }
 return plugins
