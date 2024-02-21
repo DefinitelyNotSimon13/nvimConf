@@ -195,6 +195,9 @@ local plugins = {
     dependencies = {
       "nvim-treesitter/nvim-treesitter",
     },
+  },
+  {
+    "elkowar/yuck.vim"
   }
 }
 return plugins
