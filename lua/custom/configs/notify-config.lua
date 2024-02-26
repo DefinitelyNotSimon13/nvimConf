@@ -1,3 +1,3 @@
 require('notify').setup{
-  render= "compact"
+  render= "wrapped-compact"
 }
