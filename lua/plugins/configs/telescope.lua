@@ -1,3 +1,4 @@
+vim.notify = require("notify")require("telescope").load_extension("notify")
 local options = {
   defaults = {
     vimgrep_arguments = {

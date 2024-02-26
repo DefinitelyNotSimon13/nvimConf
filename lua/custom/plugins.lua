@@ -141,6 +141,13 @@ local plugins = {
     end,
   },
   {
+    "rcarriga/nvim-notify",
+    lazy = false,
+    config = function()
+      require("custom.configs.notify-config")
+    end,
+  },
+  {
     "folke/noice.nvim",
     event = "VeryLazy",
     dependencies = {
