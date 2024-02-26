@@ -190,7 +190,7 @@ local plugins = {
     "itspriddle/vim-shellcheck",
     lazy = true,
     ft = "sh",
-    config = function ()
+    config = function()
       require("custom.configs.shellcheck-config")
       require("core.utils").load_mappings("shellcheck")
     end
@@ -210,6 +210,13 @@ local plugins = {
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope.nvim"
     }
-}
+  },
+  {
+    'stevearc/conform.nvim',
+    ft = "cpp",
+    config = function()
+      require("custom.configs.conform-config")
+    end
+  }
 }
 return plugins
