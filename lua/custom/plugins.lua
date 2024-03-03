@@ -217,6 +217,20 @@ local plugins = {
     config = function()
       require("custom.configs.conform-config")
     end
+  },
+  {
+    "https://gitlab.com/schrieveslaach/sonarlint.nvim",
+    ft = "cpp",
+    config = function()
+      require("custom.configs.sonarlint-config")
+    end
+  },
+  {
+      "lewis6991/gitsigns.nvim",
+    config = function()
+      require("gitsigns").setup()
+    end,
+    event = "VeryLazy",
   }
 }
 return plugins
