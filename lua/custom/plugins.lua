@@ -231,6 +231,11 @@ local plugins = {
       require("gitsigns").setup()
     end,
     event = "VeryLazy",
+  },
+  {
+    "ellisonleao/glow.nvim",
+    config = true,
+    cmd = "Glow"
   }
 }
 return plugins
