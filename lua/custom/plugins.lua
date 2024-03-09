@@ -254,7 +254,7 @@ local plugins = {
     end
   },
   {
-      "lewis6991/gitsigns.nvim",
+    "lewis6991/gitsigns.nvim",
     config = function()
       require("gitsigns").setup()
     end,
@@ -264,6 +264,6 @@ local plugins = {
     "ellisonleao/glow.nvim",
     config = true,
     cmd = "Glow"
-  }
+  },
 }
 return plugins
