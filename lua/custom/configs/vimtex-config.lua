@@ -1,6 +1,6 @@
-vim.cmd("filetype plugin on")
+vim.cmd("filetype plugin indent on")
 vim.cmd("syntax enable")
-vim.cmd("let g:vimtex_view_method = 'general'")
-vim.cmd("let g:vimtex_view_general_viewer = 'evince'")
-vim.cmd("let maplocalleader = '<Space>'")
-
+vim.cmd("let g:vimtex_view_method = 'zathura_simple'")
+vim.g.vimtex_fold_enabled = 1
+vim.g.vimtex_context_pdf_viewer = 'evince'
+vim.cmd("set fillchars=fold:\\ ")

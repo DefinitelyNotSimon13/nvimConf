@@ -1,4 +1,21 @@
 local M = {}
+M.folding = {
+    n = {
+        ["<space>yy"] = {
+        "za",
+        "Toggle fold"
+        },
+        ["<leader>yo"] = {
+        "zR",
+        "Open all folds"
+        },
+        ["<leader>yc"] = {
+        "zM",
+        "Close all folds"
+        },
+    }
+}
+
 M.insert = {
   i = {
     ["jj"] = {
@@ -79,7 +96,7 @@ M.copilot = {
       "Disable Copilot inline suggestions"
     },
     ["<leader>cp"] = {
-      "<CMD> Copilot panel <CR>",
+      "<cmd> Copilot panel <CR>",
       "Open a panel with up to 10 completions"
     },
     ["<leader>cg"] = {
